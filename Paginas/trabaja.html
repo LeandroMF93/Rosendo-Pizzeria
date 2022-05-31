@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PIZZERIA ROSENDO</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mediaQueries.css">
+	<script src="https://kit.fontawesome.com/53b00674d6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+	    <nav class="navbar">
+		    <img src="img/logopizza.jpg" class="logo" alt="leo farias" width="170" >
+		
+		    <ul class="nav-links">
+			    <li class="active"><a href="inicio.html">INICIO</a></li>    
+			    <li><a href="historia.html">HISTORIA</a></li>
+			    <li><a href="pizzas.html">PIZZAS</a></li>
+			    <li><a href="trabaja.html">TRABAJA CON NOSOTROS</a></li>
+			    <li class="ctn"><a href="nuestrohogar.html">NUESTRO HOGAR</a></li> 
+		    </ul>
+		    <img src="img/boton.png" alt="" class="menu-btn">
+		
+	    </nav>	
+	    <header>
+		    <div class="header-content">
+			<h2>SABORES UNICOS</h2>
+			<div class="line"></div>
+			<h1>LA MEJOR PIZZERIA DEL MUNDO</h1>
+			<a href="#" class="ctn">Leer Mas</a>
+		    </div>
+	    </header>
+
+        <section class="trabaja">
+            <form action="#">
+            <h2>Trabaja con nosotros</h2>
+            <br>
+            <p class="descripcion"> Completa tus datos que nosotros nos contactamos!!!</p>
+            <br>
+            <br>
+            <label for="Nombre">Nombre:</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="Apellido">Apellido:</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="Edad">Edad:</label>
+            <input type="number">
+            <br>
+            <br>
+            <label for="Telefono">Telefono:</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="Email">Email:</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="Email">Adjuntar CV:</label>
+            <input type="text">
+            <input type="submit"></button>
+            <br>
+            <br>
+            </form>
+            <br>
+            <div class="imgpizza">
+                <img src="img/trabajopizza.jpg" alt="">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="wapp">
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="contact">
+                <h2>CONTACTANOS!</h2>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+        </footer>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navLinks = document.querySelector('.nav-links')
+    
+            menuBtn.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+        </script>
+
+    </body>
+</html>

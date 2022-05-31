@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PIZZERIA ROSENDO</title>
+	<link rel="stylesheet" href="Paginas/style.css">
+	<link rel="stylesheet" href="Paginas/mediaQueries.css">
+	<script src="https://kit.fontawesome.com/53b00674d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar">
+		<img src="Paginas/img/logopizza.jpg" class="logo" alt="leo farias" width="170" >
+		
+		<ul class="nav-links">
+			<li class="active"><a href="Paginas/inicio.html">INICIO</a></li>    
+			<li><a href="Paginas/historia.html">HISTORIA</a></li>
+			<li><a href="Paginas/pizzas.html">PIZZAS</a></li>
+			<li><a href="Paginas/trabaja.html">TRABAJA CON NOSOTROS</a></li>
+			<li class="ctn"><a href="Paginas/nuestroHogar.html">NUESTRO HOGAR</a></li> 
+		</ul>
+		<img src="Paginas/img/boton.png" alt="" class="menu-btn">
+		
+	</nav>	
+	<header>
+		<div class="header-content">
+			<h2>SABORES UNICOS</h2>
+			<div class="line"></div>
+			<h1>LA MEJOR PIZZERIA DEL MUNDO</h1>
+			<a href="#" class="ctn">Leer Mas</a>
+		</div>
+	</header>
+
+	<main class="hero">
+        <div class="pizzero">
+            <img src="Paginas/img/horno.png" alt="" width="450">
+        </div>
+        <div class="info">            
+            <h3>Desde 2011</h3>
+            <h1>TRADICION</h1>
+            <br>
+            <P>Desde nuestros comienzos llevamos en nuestras pizza una tradición y pasión prefejados en cada una de nuestras recetas, la mejor materia prima para nuestros productos. Somos una familia que da lo mejor a sus clientes para que quieran volver siempre.</P>
+        </div>
+    </main>	
+	<footer class="footer">
+        <div class="wapp">
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="contact">
+            <h2>CONTACTANOS!</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+	
+	<script>
+		const menuBtn = document.querySelector('.menu-btn')
+		const navLinks = document.querySelector('.nav-links')
+		
+		menuBtn.addEventListener('click',()=>{
+			navLinks.classList.toggle('mobile-menu')
+		})
+	</script>
+	
+</body>
+</html>
