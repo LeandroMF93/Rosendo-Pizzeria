@@ -54,7 +54,7 @@ header{
 	width: 100vw;
 	height: 100vh;
 	
-	background-color: #fb0;
+	background-image: linear-gradient(#ffbb00, crimson);
 	background-position: bottom;
 	background-size: cover;
 	display: flex;
@@ -64,7 +64,7 @@ header{
 
 .header-content{
 	margin-bottom: 150px;
-	color: crimson;
+	color: #ffbb00;
 	text-align: center;
 }
 
@@ -261,7 +261,7 @@ header{
     display: grid;
     height: 100px;
     align-items: center;
-    background-color: #fb0;
+	background-image: linear-gradient(#ffbb00, crimson);
     color: black;
     grid-template-areas: 
     "wapp contact social";
@@ -274,7 +274,7 @@ header{
 
 .footer .wapp .fa-brands{
     font-size: 3em;
-    color: crimson;
+    color: #ffbb00;
 }
 
 .footer .contact{
@@ -292,6 +292,6 @@ header{
 
 .footer .social .fa-brands{
     font-size: 3em;
-    color: crimson;
+    color: #ffbb00;
 }
 
