@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PIZZERIA ROSENDO</title>
-	<link rel="stylesheet" href="Paginas/style.css">
-	<link rel="stylesheet" href="Paginas/mediaQueries.css">
-	<script src="https://kit.fontawesome.com/53b00674d6.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="https://kit.fontawesome.com/53b00674d6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Desafio bootstrap</title>
 </head>
-<body>
-	<nav class="navbar">
-		<img src="Paginas/img/logopizza.jpg" class="logo" alt="leo farias" width="170" >
-		
-		<ul class="nav-links">
-			<li class="active"><a href="Paginas/inicio.html">INICIO</a></li>    
-			<li><a href="Paginas/historia.html">HISTORIA</a></li>
-			<li><a href="Paginas/pizzas.html">PIZZAS</a></li>
-			<li><a href="Paginas/trabaja.html">TRABAJA CON NOSOTROS</a></li>
-			<li class="ctn"><a href="Paginas/nuestroHogar.html">NUESTRO HOGAR</a></li> 
-		</ul>
-		<img src="Paginas/img/boton.png" alt="" class="menu-btn">
-		
-	</nav>	
-	<header>
-		<div class="header-content">
-			<h2 class="sabores">SABORES UNICOS</h2>
-			<div class="line"></div>
-			<h1>LA MEJOR PIZZERIA DEL MUNDO</h1>
-			<a href="#" class="ctn">Leer Mas</a>
-		</div>
-	</header>
+<body class="cuerpo">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container">
+            
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/logopizza.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarScroll">
+                    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Paginas/inicio.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Paginas/historia.html">HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Paginas/pizzas.html">PIZZAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Paginas/trabaja.html">TRABAJA CON NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Paginas/nuestroHogar.html">NUESTRO HOGAR</a>
+                    </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>    
+    <!--Uso de Caroussel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner container-xl">
+          <div class="carousel-item active">
+            <img src="img/pizzero2.png" class="d-block w-100" alt="pizzero1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Desde 2011</h5>
+              <p>Desde nuestros comienzos llevamos en nuestras pizza una tradición y pasión prefejados en cada una de nuestras recetas.</p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="img/ingredientes.png" class="d-block w-100" alt="ingredientes">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ingredientes de maxima calidad</h5>
+              <p>Contamos con la mejor materia prima para nuestros productos, traidos exclusivamente de Italia. </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-	<main class="hero">
-        <div class="pizzero">
-            <img src="Paginas/img/horno.png" alt="" width="450">
-        </div>
-        <div class="info">            
-            <h3>Desde 2011</h3>
-            <h1>TRADICION</h1>
-            <br>
-            <P>Desde nuestros comienzos llevamos en nuestras pizza una tradición y pasión prefejados en cada una de nuestras recetas, la mejor materia prima para nuestros productos. Somos una familia que da lo mejor a sus clientes para que quieran volver siempre.</P>
-        </div>
-    </main>	
-	<footer class="footer">
+    <footer class="footer">
         <div class="wapp">
             <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
@@ -56,15 +91,7 @@
             <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
-	
-	<script>
-		const menuBtn = document.querySelector('.menu-btn')
-		const navLinks = document.querySelector('.nav-links')
-		
-		menuBtn.addEventListener('click',()=>{
-			navLinks.classList.toggle('mobile-menu')
-		})
-	</script>
-	
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>       
 </body>
 </html>

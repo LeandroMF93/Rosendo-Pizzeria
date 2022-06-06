@@ -1,0 +1,56 @@
+
+.cuerpo{
+    background-color: #ffbb00;
+}
+
+.logo{
+    width: 170px;
+    padding: 10px 0;
+}
+
+.imgpizzeria{
+    width: 500px;
+}
+
+/* footer section */
+
+.footer{
+	width: 100vw;
+	height: 100vh;
+    display: grid;
+    height: 100px;
+    align-items: center;
+	background-image: linear-gradient(#ffbb00, crimson);
+    color: black;
+    grid-template-areas: 
+    "wapp contact social";
+}
+
+.footer .wapp{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .wapp .fa-brands{
+    font-size: 3em;
+    color: #ffbb00;
+}
+
+.footer .contact{
+    text-align: center;
+}
+
+.footer .contact h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer .social{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social .fa-brands{
+    font-size: 3em;
+    color: #ffbb00;
+}
+
