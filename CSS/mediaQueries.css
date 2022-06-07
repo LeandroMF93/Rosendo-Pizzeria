@@ -9,10 +9,10 @@
 		padding: 0;
 	}
 	.logo{
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		position: absolute;
-		top: 20px;
-		left: 20px;
+		top: 10px;
+		left: 10px;
 	}
 
 	.nav-links{
@@ -57,6 +57,10 @@
 	}
 
 	.footer .social{
+		text-align: left;
+	}
+
+	.footer .wapp{
 		text-align: center;
 	}
 
