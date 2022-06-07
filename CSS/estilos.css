@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Montserrat:ital,wght@0,100;0,600;1,300;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Roboto:ital,wght@0,100;0,300;1,300&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Montserrat:ital,wght@0,100;0,600;1,300;1,800&family=Roboto:ital,wght@0,100;0,300;1,300&family=Rubik&display=swap');
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
 
 .cuerpo{
     background-color: #ffbb00;
@@ -5,7 +17,95 @@
 
 .logo{
     width: 170px;
-    padding: 10px 0;
+    
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+    
+}
+
+.active{
+	color: crimson;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/*Navbar*/
+.navbar{
+    position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 20px;
+	color: crimson;
+}
+
+.nav-links{
+	display: flex;
+	align-items: center;
+	
+}
+.nav-links li{
+	margin: 0 30px;
+}
+
+header{
+	width: 100vw;
+	height: 100vh;
+	
+	background-color: #fb0;
+	background-position: bottom;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.header-content{
+	margin-bottom: 150px;
+	color: crimson;
+	text-align: center;
+}
+
+.header-content h2{
+	font-size: 4vmin;
+}
+
+.line {
+	width: 150px;
+	height: 4px;
+	background: #fb0;
+	margin: 10px auto; 
+	border-radius: 5px;
+}
+
+.header-content h1{
+	font-size: 7vmin;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.ctn{
+	padding: 8px 15px;
+	background: crimson;
+	border-radius: 30px;
+	color: #fb0;
+}
+
+.menu-btn{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 40px;
+	cursor: pointer;
+	display: none;
 }
 
 .imgpizzeria{

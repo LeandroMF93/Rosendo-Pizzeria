@@ -9,10 +9,12 @@
 		padding: 0;
 	}
 	.logo{
+		margin-bottom: 20px;
 		position: absolute;
-		top: 30px;
-		left: 30px;
+		top: 20px;
+		left: 20px;
 	}
+
 	.nav-links{
 		flex-direction: column;
 		width: 100%;
@@ -30,25 +32,9 @@
 	
 	.nav-links li{
 		margin: 30px auto;
-	}
-
-	.hero .info{
-		grid-column: 2 / 10;
-		grid-row: 4 / 8;
-	}
-	 
-	.hero h1{
-		font-size: 3.5em;
 
 	}
 
-	.hero .pizzero{
-		display: none;
-	}
-
-    .imgpizza{
-        display: none;
-    }
 
     .ubicacion .info p{
         display: none;
