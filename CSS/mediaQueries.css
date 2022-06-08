@@ -50,14 +50,24 @@
 		grid-row: 4 / 8;
     }
 
-	
+	.footer{
+		width: 100vw;
+		height: 100vh;
+		display: grid;
+		height: 100px;
+		align-items: center;
+		background-image: linear-gradient(#ffbb00, crimson);
+		color: black;
+		grid-template-areas: 
+		"wapp contact social";
+	}
 
 	.footer .contact{
 		display: none;
 	}
 
 	.footer .social{
-		text-align: left;
+		text-align: center;
 	}
 
 	.footer .wapp{
