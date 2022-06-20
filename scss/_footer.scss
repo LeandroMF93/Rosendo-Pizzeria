@@ -1,0 +1,25 @@
+$color-primario:#ffbb00;
+$color-secundario:crimson;
+$color-terciario:white;
+$color-fuente:black;
+
+$box-shadow: 0 2px 10px 0 rgba(0,0,0,0.6);
+
+$limit: 10;
+$unit: 8px;
+.footer{
+    ///aplicacion de extend///
+	@extend .piedepagina;
+    a{
+        .social{
+        display: flex;
+        justify-content: center;
+        color: #ffbb00;
+        }
+        .fa-brands{
+            font-size: 3em;
+            color: #ffbb00;
+        }
+
+    }
+}
