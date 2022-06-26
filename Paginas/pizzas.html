@@ -3,106 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="icon" href="../img/favicon.ico">
-    <title>Aplicando SASS</title>
+    <title>Tercera entrega</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/mediaQueries.css">
-	<script src="https://kit.fontawesome.com/53b00674d6.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <nav class="navbar">
-                
-                <img src="../img/logopizza.jpg" class="logo" alt="leo farias"  width="170" >
-                <ul class="nav-links">
-                    <li><a href="../Paginas/inicio.html">INICIO</a></li>    
-                    <li><a href="../Paginas/historia.html">HISTORIA</a></li>
-                    <li><a href="../Paginas/pizzas.html">PIZZAS</a></li>
-                    <li><a href="../Paginas/trabaja.html">TRABAJA CON NOSOTROS</a></li>
-                    <li class="ctn"><a href="../Paginas/nuestroHogar.html">NUESTRO HOGAR</a></li>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/53b00674d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-                </ul>
-                <img src="../img/boton.png" alt="" class="menu-btn">
-            </nav>
-        </header>
+</head>
+
+<body>
+    
+    <header id="menu">         
+        <nav>
+            <a href="../index.html"><img src="../img/logopng.png" class="logo" alt="logo" width="170" height=""></a>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../Paginas/historia.html">HISTORIA</a></li>
+                <li><a href="../Paginas/pizzas.html">PIZZAS</a></li>
+                <li><a href="../Paginas/trabaja.html">TRABAJA CON NOSOTROS</a></li>
+                <li><a href="../Paginas/nuestroHogar.html">NUESTRO HOGAR</a></li>
+            </ul>
+        </nav>            
+    </header>
+
+    <section class="presentacion">
+        <div class="flex-item1">
+            
+                    <h2>Nuestra variedad de Pizzas</h2>
+                    <br>
+            
+                    <div class="simples">
+                        <h3>Pizzas</h3>    
+                        <img class="imgpizza" src="../img/fondopizza3.jpg" alt="">
+                        <form action="#">
+                            <select name="Pizzas" >
+                                <option value="id-0">Elegir pizzas</option>
+                                <option value="opcion1">Muzzarella</option>
+                                <option value="opcion2">Napolitana</option>
+                                <option value="opcion3">Jamon y Morrones</option>
+                                <option value="opcion4">Fugaceta</option>
+                                <option value="opcion5">Anchoas</option>
+                                <option value="opcion6">Primavera</option>
+                                <br>
+                            </select>    
+                        </form>        
+                    </div>    
+            
+                    <div class="pizza-especial">
+                        <h3>Especiales</h3>
+                        <img class="imgespecial" src="../img/PIZZAESPECIAL.JPG" alt="" width="288">
+                        <form action="#">
+                            <select name="Pizzas" >
+                                <option value="id-0">Elegir Especiales</option>
+                                <option value="opcion1">Especial Rosendo</option>
+                                <option value="opcion2">Especial de la Casa</option>
+                                <option value="opcion3">Especial New York</option>
+                                <option value="opcion4">Fugaceta Rellena Especial</option>
+                                <option value="opcion5">Especial Chicago </option>
+                                <option value="opcion6">Napolita Maradona</option>
+                                <br>
+                            </select>    
+                        </form>
+                    </div>       
+            
+            
+                <div class="pizza-extra">
+                    <h3>Extras</h3>
+                    <img class="imgextra" src="../img/EXTRAS.jpg" alt="" width="244">
+                    <form action="#">
+                        <select name="Pizzas" >
+                            <option value="id-0">Elegir extras</option>
+                            <option value="opcion1">Emapanada JYQ</option>
+                            <option value="opcion2">Empanada Carne (cortada a cuchillo)</option>
+                            <option value="opcion3">Faina</option>
+                            <option value="opcion4">Faina Relleno</option>
+                            <option value="opcion5">Tarta de Acelga</option>
+                            <option value="opcion6">Torta de ricota</option>
+                            <br>
+                        </select>
+                    </form>    
+                </div>
+            
+            
+            
+            
+            
+                    </div>
+                
+            
+            
+            
+            
+        </div>
         
-        <div class="row">
-                <div class="col-xs-12 col-md-6 col-lg-4 p-3">
-                    <h2>Pizzas</h2>    
-                    <img class="imgpizza" src="../img/fondopizza3.jpg" alt="">
-                    <form action="#">
-                        <select name="Pizzas" >
-                            <option value="id-0">Elegir pizzas</option>
-                            <option value="opcion1">Muzzarella</option>
-                            <option value="opcion2">Napolitana</option>
-                            <option value="opcion3">Jamon y Morrones</option>
-                            <option value="opcion4">Fugaceta</option>
-                            <option value="opcion5">Anchoas</option>
-                            <option value="opcion6">Primavera</option>
-                            <br>
-                        </select>    
-                    </form>     
+    </section>
+
+
+    
+
+
+    <div class="wrapper">
+        <section class="servicios" >
+            <div class="titulo-servicios">
+                <h2>Desde nuestros comienzos llevamos en nuestras pizza una tradición y pasión prefejados en cada una de nuestras recetas.</h2>
+        
+            </div>
+            <div class="tipo-servicios">
+                <div>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>Whats App</h3>
+                    <p>
+                        11-3458-5621
+                    </p>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-4 p-3">
-                    <h2>Especiales</h2>
-                    <img class="imgespecial" src="../img/PIZZAESPECIAL.JPG" alt="" width="288">
-                    <form action="#">
-                        <select name="Pizzas" >
-                            <option value="id-0">Elegir Especiales</option>
-                            <option value="opcion1">Especial Rosendo</option>
-                            <option value="opcion2">Especial de la Casa</option>
-                            <option value="opcion3">Especial New York</option>
-                            <option value="opcion4">Fugaceta Rellena Especial</option>
-                            <option value="opcion5">Especial Chicago </option>
-                            <option value="opcion6">Napolita Maradona</option>
-                            <br>
-                        </select>    
-                    </form>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>
+                        @Pizzeria Rosendo
+                    </p>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-4 p-3">
-                    <h2>Extras</h2>
-                <img class="imgextra" src="../img/EXTRAS.jpg" alt="" width="244">
-                <form action="#">
-                    <select name="Pizzas" >
-                        <option value="id-0">Elegir extras</option>
-                        <option value="opcion1">Emapanada JYQ</option>
-                        <option value="opcion2">Empanada Carne (cortada a cuchillo)</option>
-                        <option value="opcion3">Faina</option>
-                        <option value="opcion4">Faina Relleno</option>
-                        <option value="opcion5">Tarta de Acelga</option>
-                        <option value="opcion6">Torta de ricota</option>
-                        <br>
-                    </select>
-                </form>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>
+                        Pizzeria Rosendo
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>    
+        </section>
+    </div>
 
-    <footer class="footer">
-        <div class="wapp">
-            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-        <div class="contact">
-            <h2>CONTACTANOS!</h2>
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+    <footer>
+        <p class="footer-content">
+            Pizzera Rosendo;Todos los derechos reservados 2021
+        </p>
     </footer>
-    
     <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navLinks = document.querySelector('.nav-links')
-        
-        menuBtn.addEventListener('click',()=>{
-            navLinks.classList.toggle('mobile-menu')
-        })
+       const menu = document.getElementById('menu');
+       window.onscroll = function(){
+           if(window.pageYOffset>10){
+               menu.style.backgroundColor='#fff';
+           }
+           else{
+               menu.style.backgroundColor='initial';
+           }
+       }
     </script>
-
 </body>
 </html>
+
+
+

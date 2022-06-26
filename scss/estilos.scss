@@ -1,22 +1,92 @@
-@import "button";
-@import "config";
-@import "utils";
-@import "footer";
-@import "header-container";
-@import "body";
-///variables///
-$color-primario:#ffbb00;
-$color-secundario:crimson;
-$color-terciario:white;
-$color-fuente:black;
-
-$box-shadow: 0 2px 10px 0 rgba(0,0,0,0.6);
-
-$limit: 10;
-$unit: 8px;
+@import 'cuerpo';
+@import 'trabaja';
 
 
+.logo{
+    width: 100px;
+    height: 80px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    border-top: 30px solid #ffbb00;
+    width: 100%;
+
+}
+
+.wrapper{ 
+    background-color: #ffbb00;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 
 
+///NESTING///
 
+nav{
+    @include caja-flex
+    (space-between, center, nowrap);
+    ul{
+        display: flex;
+        padding: 0;
+        a{
+            padding: 10px;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #ffbb00;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.presentacion{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    @include caja-flex(space-between, center , nowrap);
+    
+    .flex-items2{
+        text-align: center;
+    }
+
+    h1{
+        margin-top: 0;
+        padding-right: 20px;
+        font-size: $font-h1;
+    }
+
+    p{
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.servicios{
+    div{
+        text-align: center;
+    }
+    .tipo-servicios{
+        @include caja-flex(center, center, nowrap);
+        i{
+            font-size: 30px;
+            color: crimson;
+        }
+    }
+}
+
+footer{
+    min-height: 80px;
+    background-color: rgb(14, 168, 14);
+    margin-top: 0;
+    .footer-content{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+}
+
+@import'mediasqueries';
