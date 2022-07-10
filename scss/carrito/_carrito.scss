@@ -1,0 +1,32 @@
+/* Carrito*/
+
+
+    .container_carrito{
+        max-width: 960px;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 2px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding-right: 4rem;
+        padding-left: 3rem;
+        padding-bottom: 1rem;
+        margin-bottom: 6rem;
+        margin-top: 9rem;
+        .register__link{
+            cursor: pointer;
+            color: crimson;
+        }
+        .btn_carrito{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 10px 30px;
+            color: black;
+            &:hover{
+                background-color: #ffbb00;
+                color: crimson;
+            }
+        }
+    }

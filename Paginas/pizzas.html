@@ -2,157 +2,235 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tercera entrega</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/mediaQueries.css">
+    <meta name="description" content="la mejor pizza del pais la encontras en Pizzeria Rosendo, la mejor calidad.">
+    <meta name="keywords"  content="Pizza, Especial de la casa, muzzarela, pepperoni, especia italiana, especial rosendo, especial new york, especial primavera ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Secular+One&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/88b89d26ed.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/favicon.ico">
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/53b00674d6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Pizzeria Rosendo</title>
 </head>
-
-<body>
-    
-    <header id="menu">         
-        <nav>
-            <a href="../index.html"><img src="../img/logopng.png" class="logo" alt="logo" width="170" height=""></a>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../Paginas/historia.html">HISTORIA</a></li>
-                <li><a href="../Paginas/pizzas.html">PIZZAS</a></li>
-                <li><a href="../Paginas/trabaja.html">TRABAJA CON NOSOTROS</a></li>
-                <li><a href="../Paginas/nuestroHogar.html">NUESTRO HOGAR</a></li>
-            </ul>
-        </nav>            
+<body class="cuerpo_carrito">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <img class="logo" src="../img/logopizza.jpg">
+                </div> 
+                <!-- toggler menu  --> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 mx-auto">
+                        <li class="nav-item">
+                        <a class="nav-link active link-dark" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active link-dark" aria-current="page" href="../paginas/pizzas.html">Pizzas</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active link-dark" aria-current="page" href="../paginas/historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active link-dark" aria-current="page" href="../paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="nav__cart me-2">
+                        <a href="../paginas/carrito.html" Target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section class="presentacion">
-        <div class="flex-item1">
-            
-                    <h2>Nuestra variedad de Pizzas</h2>
-                    <br>
-            
-                    <div class="simples">
-                        <h3>Pizzas</h3>    
-                        <img class="imgpizza" src="../img/fondopizza3.jpg" alt="">
-                        <form action="#">
-                            <select name="Pizzas" >
-                                <option value="id-0">Elegir pizzas</option>
-                                <option value="opcion1">Muzzarella</option>
-                                <option value="opcion2">Napolitana</option>
-                                <option value="opcion3">Jamon y Morrones</option>
-                                <option value="opcion4">Fugaceta</option>
-                                <option value="opcion5">Anchoas</option>
-                                <option value="opcion6">Primavera</option>
-                                <br>
-                            </select>    
-                        </form>        
-                    </div>    
-            
-                    <div class="pizza-especial">
-                        <h3>Especiales</h3>
-                        <img class="imgespecial" src="../img/PIZZAESPECIAL.JPG" alt="" width="288">
-                        <form action="#">
-                            <select name="Pizzas" >
-                                <option value="id-0">Elegir Especiales</option>
-                                <option value="opcion1">Especial Rosendo</option>
-                                <option value="opcion2">Especial de la Casa</option>
-                                <option value="opcion3">Especial New York</option>
-                                <option value="opcion4">Fugaceta Rellena Especial</option>
-                                <option value="opcion5">Especial Chicago </option>
-                                <option value="opcion6">Napolita Maradona</option>
-                                <br>
-                            </select>    
-                        </form>
-                    </div>       
-            
-            
-                <div class="pizza-extra">
-                    <h3>Extras</h3>
-                    <img class="imgextra" src="../img/EXTRAS.jpg" alt="" width="244">
-                    <form action="#">
-                        <select name="Pizzas" >
-                            <option value="id-0">Elegir extras</option>
-                            <option value="opcion1">Emapanada JYQ</option>
-                            <option value="opcion2">Empanada Carne (cortada a cuchillo)</option>
-                            <option value="opcion3">Faina</option>
-                            <option value="opcion4">Faina Relleno</option>
-                            <option value="opcion5">Tarta de Acelga</option>
-                            <option value="opcion6">Torta de ricota</option>
-                            <br>
-                        </select>
-                    </form>    
+            <main class="p__hero">
+                <div class="titulo_pi">
+                    <h3>
+                        La mejor y variedad 
+                    </h3>
+                    <p>
+                        Elegi la pizza que mas te guste!
+                    </p>
                 </div>
             
-            
-            
-            
-            
+            </main>
+
+            <section class="pizzas" id="cards_men">
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/1.jpg" alt="">
                     </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial Muzzarela</h2>
+                        <p>
+                            Salsa pomodoro y muzzarela de primera calidad. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/2.jpg" alt="">
+                    </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial de la Casa</h2>
+                        <p>
+                            Mortadela italiana, pesto genoves y burrata. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/3.jpg" alt="">
+                    </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial Muzzarela</h2>
+                        <p>
+                            Salsa pomodoro y muzzarela de primera calidad. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/4.jpg" alt="">
+                    </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial Muzzarela</h2>
+                        <p>
+                            Salsa pomodoro y muzzarela de primera calidad. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/5.jpg" alt="">
+                    </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial Muzzarela</h2>
+                        <p>
+                            Salsa pomodoro y muzzarela de primera calidad. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/fuga.jpg" alt="">
+                    </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial Muzzarela</h2>
+                        <p>
+                            Salsa pomodoro y muzzarela de primera calidad. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/faina.jpg" alt="">
+                    </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial Muzzarela</h2>
+                        <p>
+                            Salsa pomodoro y muzzarela de primera calidad. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/empanadas.jpg" alt="">
+                    </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial Muzzarela</h2>
+                        <p>
+                            Salsa pomodoro y muzzarela de primera calidad. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+                <div class="pizza">
+                    <div class="imagen">
+                        <img class="imagen_pizza" src="../img/tarta.jpg" alt="">
+                    </div>
+                    <div class="tipo_p">
+                        
+                        <h2>Especial Muzzarela</h2>
+                        <p>
+                            Salsa pomodoro y muzzarela de primera calidad. <strong>$1000</strong>
+                        </p>
+                        <button><a href="./carrito.html"> Comprar  <i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a  href="https://api.whatsapp.com" class="btn-wsp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+    
+                <a  href="https://api.whatsapp.com" class="boton_wsp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
                 
+            </section>
             
-            
-            
-            
-        </div>
-        
-    </section>
-
-
     
 
-
-    <div class="wrapper">
-        <section class="servicios" >
-            <div class="titulo-servicios">
-                <h2>Desde nuestros comienzos llevamos en nuestras pizza una tradición y pasión prefejados en cada una de nuestras recetas.</h2>
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="redespi">
+                <ul>
+                    <li class="redessociales"><a href="https://www.facebook.com/standpa" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="redessociales"><a href="https://www.instagram.com/stand.pa/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
         
+            <div class="linkspi">
+                <ul>
+                    <li class="itemspi"><a href="/index.html">Inicio</a></li>
+                    <li class="itemspi"><a href="../paginas/contacto.html">Contacto</a></li>
+                    <li class="itemspi"><a href="../paginas/contacto.html">Trabaja con Nosotros</a></li>
+                </ul>
             </div>
-            <div class="tipo-servicios">
-                <div>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <h3>Whats App</h3>
-                    <p>
-                        11-3458-5621
-                    </p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-instagram"></i>
-                    <h3>Instagram</h3>
-                    <p>
-                        @Pizzeria Rosendo
-                    </p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-facebook"></i>
-                    <h3>Facebook</h3>
-                    <p>
-                        Pizzeria Rosendo
-                    </p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <p class="footer-content">
-            Pizzera Rosendo;Todos los derechos reservados 2021
-        </p>
+        </div>
+        <div class="footer_der">
+            &copy; 2015 PIZZERIA ROSENDO Inc. Todos los derechos estan reservados.
+        </div>
     </footer>
-    <script>
-       const menu = document.getElementById('menu');
-       window.onscroll = function(){
-           if(window.pageYOffset>10){
-               menu.style.backgroundColor='#fff';
-           }
-           else{
-               menu.style.backgroundColor='initial';
-           }
-       }
-    </script>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 </html>
-
-
-

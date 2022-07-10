@@ -1,0 +1,197 @@
+/* media queries */
+
+@media screen and (min-width: 0px) and (max-width: 765px){
+
+    .navbar-nav{
+        align-items: center;
+        font-size: 40px;
+        font-weight: 300;  
+    } 
+    .nav__cart{
+        text-align: center;
+        padding-bottom: 30px;
+        svg{
+            width: 40px;
+            height: 40px;
+            &:hover{
+                fill: goldenrod;
+            }
+        }
+    }
+    // .hero__div{
+    //     width: 100%;
+    // }
+    // .banner{
+    //     width: 100%;
+    // }
+
+    .titulopizza {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        .t_1{
+            font-family: 'Secular One', sans-serif;
+            font-size: 40px;
+            font-weight: 200;
+            color:rgb(90, 25, 25);
+        }
+        h1{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+        }
+        .t_2{
+            font-size: 50px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .t_3{
+            display: flex;
+            font-size: 30px;
+            flex-direction: row;
+            margin-left: 60px;
+            span{
+                color: goldenrod;
+            }
+        }
+    }
+    
+.pizzas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:2rem 4rem; 
+}
+
+.opiniones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+    margin: 4rem;
+        .caja_opi{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            margin:0 auto; 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            border-radius: 15px;
+            margin-top: 2rem;
+            
+            
+            .opi_imagen{
+                .opi_img{
+                    padding: 5px;
+                    width: 150px;
+                    height: auto;
+                    border-radius: 15px;
+                }
+            }
+            
+    }
+}
+
+.titulo_pi{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+    padding: 0 10px;
+    h3{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+    }
+    p{
+        font-size: 30px;
+        font-weight: 100;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+
+.pizzas{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin:2rem 4rem; 
+    }
+
+    
+    .titulohash{
+        display: flex; 
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }   
+    .titulohash h2{
+        font-size: 40px;
+    }
+    
+    
+    .section__contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }    
+
+    .formulario{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        .formulario_info{
+            align-items: center;
+            text-align: center;
+            margin-right: 0;
+            h3{
+                margin: 3rem 0;
+            }
+            h4{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+
+    .formulario{
+        margin-top: 4rem;
+    }
+
+    .caja button{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin: 0 auto;
+    
+    }
+
+    .linkspi ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            padding-top: 20px;
+        }
+    } 
+
+    .footer{
+        width: 100%;
+        
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+
+}

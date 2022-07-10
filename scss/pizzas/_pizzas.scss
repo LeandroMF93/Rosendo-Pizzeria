@@ -1,0 +1,100 @@
+/* HOME */
+.titulo_pi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    h3{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+    }
+    p{
+        font-size: 30px;
+        font-weight: 100;
+    }
+}
+
+
+
+// Variedad de pizzas //
+.pizzas{
+    display: flex;
+    flex-wrap: wrap;
+    // margin-top: 5rem;
+    // margin-bottom: 10rem;
+    text-align: center;
+    justify-content: space-around;
+    margin: 4rem 9rem;
+        .pizza{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 17rem;
+            padding: 17px;
+            border-radius: 15px;
+            margin-top: 2rem;
+            .imagen{
+                height: 80px;
+                width: 800%;
+            }
+            .tipo_p {
+                
+                font-size: 16px;
+                                          
+                    h2{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 20px 0;
+                    color: black;
+                }
+                
+                p{
+                    color: black;
+                    font-size: 12px;
+                    margin: 30px 0;
+
+                }
+                button{
+                    float: right;
+                    background-color: #ffbb00;
+                    color: crimson;
+                    border: none;
+                    padding: 20px 18px;
+                    border-radius: 15px;
+                    a{
+                        color: black;
+                        &:hover{
+                            color: crimson;
+                        }
+                }
+            }   
+        }
+    }
+}
+
+
+.imagen_pizza{
+        transition: transform 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }  
+}
+
+
+
+
+.pizza:hover{
+    animation: card 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    @keyframes card {
+        0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+        100% {
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        }
+    }
+}
