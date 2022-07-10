@@ -802,3 +802,45 @@ body {
   100% {
     transform: translateZ(50px);
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); } }
+
+/*Error*/
+.imagen_404 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem; }
+  .imagen_404 .imagen_error {
+    width: 500px; }
+    .imagen_404 .imagen_error img {
+      width: 500px; }
+  .imagen_404 .titulo_error {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center; }
+    .imagen_404 .titulo_error h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 8rem;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.1); }
+    .imagen_404 .titulo_error h3 {
+      font-weight: bold; }
+    .imagen_404 .titulo_error p {
+      font-family: "poppins" sans-serif;
+      font-size: 40px;
+      width: 70%;
+      font-weight: 100; }
+
+@media screen and (min-width: 0px) and (max-width: 765px) {
+  .img__404 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 10rem; }
+    .img__404 .image__error {
+      width: 400px; }
+      .img__404 .image__error img {
+        width: 400px; } }
