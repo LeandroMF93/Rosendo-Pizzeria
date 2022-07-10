@@ -171,19 +171,19 @@
     justify-content: space-evenly; }
   .titulohash h2 {
     font-size: 40px; }
-  .formulario {
+  .formulario1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
     height: auto; }
-    .formulario .formulario_info {
+    .formulario1 .formulario_info {
       align-items: center;
       text-align: center;
       margin-right: 0; }
-      .formulario .formulario_info h3 {
+      .formulario1 .formulario_info h3 {
         margin: 3rem 0; }
-      .formulario .formulario_info h4 {
+      .formulario1 .formulario_info h4 {
         margin-bottom: 2rem; }
   .formulario {
     margin-top: 4rem; }
@@ -311,43 +311,43 @@
     .formulario .formulario_info .telefono {
       margin: 20px auto;
       font-size: 18px; }
-  .formulario .formulario {
+  .formulario .formulario1 {
     background-color: #ffbb00;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px; }
-    .formulario .formulario input {
+    .formulario .formulario1 input {
       /* background-color: rgba(184, 183, 183, 0.5); */
       background: none;
       border: none;
       border-bottom: solid crimson; }
-    .formulario .formulario .nombre input {
+    .formulario .formulario1 .nombre input {
       width: 300px; }
-    .formulario .formulario .email__formulario input {
+    .formulario .formulario1 .email__formulario input {
       width: 305px; }
-    .formulario .formulario .telefono__form .codigo {
+    .formulario .formulario1 .telefono__form .codigo {
       width: 30px; }
-    .formulario .formulario .telefono__form .telenumero {
+    .formulario .formulario1 .telefono__form .telenumero {
       width: 270px; }
-    .formulario .formulario .descripcion {
+    .formulario .formulario1 .descripcion {
       background: none; }
-    .formulario .formulario .btn {
+    .formulario .formulario1 .btn {
       background-color: crimson;
       margin-top: 1rem;
       padding: 5px 20px; }
-      .formulario .formulario .btn:hover {
+      .formulario .formulario1 .btn:hover {
         background-color: #ffbb00;
         color: crimson; }
-    .formulario .formulario .caja {
+    .formulario .formulario1 .caja {
       display: flex;
       flex-direction: column;
       gap: 15px; }
-      .formulario .formulario .caja button {
+      .formulario .formulario1 .caja button {
         background-color: crimson;
         margin-top: 1rem;
         padding: 5px 20px; }
-        .formulario .formulario .caja button:hover {
+        .formulario .formulario1 .caja button:hover {
           background-color: #ffbb00;
           color: crimson; }
 
